@@ -29,7 +29,7 @@ function App() {
   }, [isAuthenticated]);
 
   return (
-    <GoogleOAuthProvider clientId="840104570989-vm2kdsss46i5je61o1nledgn9mpf2qqn.apps.googleusercontent.com">
+    <GoogleOAuthProvider clientId={import.meta.env.VITE_GOOGLE_CLIENT_ID}>
       <div className="App">
         <h2>Google Authentication</h2>
 
