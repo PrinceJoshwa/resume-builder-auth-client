@@ -1,10 +1,17 @@
 {
     "builds": [
       {
-        "src": "package.json",
-        "use": "@vercel/static-build",
-        "config": { "distDir": "dist" }
+        "src": "client/package.json",
+        "use": "@vercel/node"
       }
-    ]
+    ],
+    "env": {
+      "NPM_CONFIG_PRODUCTION": "false"
+    },
+    "build": {
+      "env": {
+        "VITE_BUILD_CMD": "chmod +x node_modules/.bin/vite"
+      }
+    }
   }
   

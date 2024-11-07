@@ -8,7 +8,6 @@
   },
   "scripts": {
     "dev": "vite",
-    "postinstall": "cross-env-shell \"[ $OS != 'Windows_NT' ] && chmod +x node_modules/.bin/vite || exit 0\"",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
